@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Smart Parking System</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>SMART PARKING SYSTEM</h1>
+
+<h2 id="greeting"></h2>
+
+<div class="form">
+
+<input type="text" id="name" placeholder="User Name">
+
+<input type="number" id="age" placeholder="Age">
+
+<input type="text" id="vehicle" placeholder="Vehicle Number">
+
+<input type="number" id="hours" placeholder="Parking Hours">
+
+<select id="slotSelect">
+
+<option value="">Select Slot</option>
+
+<option value="0">Slot 1</option>
+<option value="1">Slot 2</option>
+<option value="2">Slot 3</option>
+<option value="3">Slot 4</option>
+<option value="4">Slot 5</option>
+<option value="5">Slot 6</option>
+<option value="6">Slot 7</option>
+<option value="7">Slot 8</option>
+<option value="8">Slot 9</option>
+<option value="9">Slot 10</option>
+
+</select>
+<br>
+
+<button onclick="parkCar()">Park Vehicle</button>
+
+<button onclick="exitCar()">Exit Vehicle</button>
+
+</div>
+
+<div class="dashboard">
+
+<h2>Total Slots : 10</h2>
+
+<h2 id="available">Available : 10</h2>
+
+</div>
+
+<div class="road">
+
+<div class="movingCar" id="movingCar">
+🚗
+</div>
+
+</div>
+
+<div class="parkingArea">
+
+<div class="slot" id="slot0">Slot 1</div>
+<div class="slot" id="slot1">Slot 2</div>
+<div class="slot" id="slot2">Slot 3</div>
+<div class="slot" id="slot3">Slot 4</div>
+<div class="slot" id="slot4">Slot 5</div>
+<div class="slot" id="slot5">Slot 6</div>
+<div class="slot" id="slot6">Slot 7</div>
+<div class="slot" id="slot7">Slot 8</div>
+<div class="slot" id="slot8">Slot 9</div>
+<div class="slot" id="slot9">Slot 10</div>
+
+</div>
+
+<h2>User Details</h2>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Name</th>
+<th>Age</th>
+<th>Vehicle</th>
+<th>Slot</th>
+<th>Entry Time</th>
+<th>Exit Time</th>
+<th>Charges</th>
+<th>Penalty</th>
+
+</tr>
+
+</thead>
+
+<tbody id="tableBody"></tbody>
+
+</table>
+
+<div id="token"></div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
